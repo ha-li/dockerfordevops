@@ -1,0 +1,24 @@
+Download VirtualBox
+Pick the correct link for your operating system
+https://www.virtualbox.org/wiki/Downloads
+
+
+Download xubuntu 14.04.3
+The link below is for the 64­bit version (need a bit torrent client)
+http://cdimage.ubuntu.com/xubuntu/releases/14.04/release/xubuntu­14.04.3­desktop­amd64.iso
+
+
+VirtualBox guest add­on commands
+Start the guest add­on installer
+sudo sh ./VBoxLinuxAdditions.run
+
+Add your user to the vboxsf group
+sudo usermod -a -G vboxsf $(whoami)
+
+VirtualBox shared folder
+Create the shared folder in VirtualBox
+<Follow the instructions in the video>
+
+Symlink the shared folder that you created in the video
+sudo ln -s /media/sf_host $HOME/Share
+<Replace host with whatever you used as your shared name>
