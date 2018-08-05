@@ -1,0 +1,27 @@
+we want to install dockers 1.8.3 
+
+-open up a browser on your guest os
+-go to website:
+   apt.dockerproject.org/repo/pool/main/d/docker-engine
+
+-download 1.8.3-trusty onto your guest os
+   then open terminal in your download folder 
+
+-install the dependencies for docker. open terminal
+   sudo apt-get install libapparmor1 aufs-tools ca-certificates
+
+-then install the docker download 1.8.3 trusty
+   sudo dpkg -i docker-engine_1.8.3.0-trusty_amd64.deb
+
+-verify the docker install with the below command. It should return the version.
+   docker --version
+
+-give yourself the ability to run docker without sudo by adding yourself to the docker group:
+   sudo usermod -aG docker <userid>
+
+-shutdown the guest os and restart to allow usermod to take effect
+
+
+
+
+      
