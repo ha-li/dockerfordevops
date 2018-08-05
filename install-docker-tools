@@ -1,0 +1,18 @@
+installing docker-compose - a cmdline tool that helps run docker in a easier way
+
+1. install curl
+    sudo apt-get install curl
+
+2. install docker compose 
+    curl -L https://github.com/docker/compose/releases/download/1.4.2/docker-compose-Linux-x86_64 > ~/Downloads/docker-compose
+
+3. make it executable
+    chmod +x ~/Downloads/docker-compose
+
+4. put it in your system path
+    sudo mv ~/Download/docker-compose /usr/local/bin
+
+5. verify you can access it
+    docker-compose --version
+
+
