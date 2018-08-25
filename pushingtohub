@@ -1,0 +1,12 @@
+to push an image to docker hub
+-first tag an image on file to the repo name
+   eg you have an image like ubuntu-git (you installed git on ubuntu:latest)
+      and you want to save it to your docker repo (userid/repo-name:tag)
+   docker tag ubuntu-git ha-li/ubuntu-git:latest
+
+-then docker images should show your new image as ha-li/ubuntu-git   
+ push that image
+
+   docker  push ha-li/ubuntu-git:latest
+
+
